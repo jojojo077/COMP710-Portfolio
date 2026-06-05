@@ -57,6 +57,15 @@
   width: 550px;
   background-color: rgba(0, 0, 0, 0.65); 
   border-radius: 10%;
+
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
+}
+.welcome:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+  transform: scale(1.03); 
+    
+    /* Optional: Makes the shadow deeper to look like it is lifting up */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); 
 }
 .welcome a{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -83,6 +92,7 @@
   display: inline-block; /* Keeps container tightly fitted to the image size */
   border-radius: 12px;       /* Match the rounding amount */
   overflow: hidden;
+  
 }
 
 /* Make sure the image behaves responsively */
@@ -121,6 +131,15 @@
   border-radius: 12px;
   font-family: system-ui, sans-serif;
   max-width: 800px;
+
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
+}
+.about-card:hover {
+  background-color: #055d8a;
+  transform: scale(1.03); 
+    
+    /* Optional: Makes the shadow deeper to look like it is lifting up */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); 
 }
 
 /* Circular Profile Image */
@@ -321,6 +340,16 @@
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
+}
+
+.portfolio-project-box:hover {
+  transform: scale(1.03); 
+    
+    /* Optional: Makes the shadow deeper to look like it is lifting up */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); 
+    background-color: #0e1a25;
 }
 
 .portfolio-project-box h2 {
