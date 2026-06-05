@@ -1,0 +1,198 @@
+<!-- Side navigation -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio Projects</title>
+</head>
+<body style="background-color: rgb(58, 94, 126);">
+  
+    <div class="sidenav">
+      <b>Dante Leyting</b>
+      <b>COMP710 Game Programming Student</b><br>
+  <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="#"><i class="fa fa-window-maximize"></i> Tech Demo</a>
+  <a href="projects.html" style="color: #ffffff;"><i class="fa fa-laptop"></i> Projects</a>
+  <a href="resume.html"><i class="fa fa-book"></i> Resume</a>
+  <a href="#"><i class="fa fa-pie-chart"></i> Skills</a>
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+</div>
+<div class="main">
+    <div class="portfolio-project-page">
+
+        <h1 class="portfolio-project-title">F.R.O.G</h1>
+
+        <div class="portfolio-project-grid">
+
+            <!-- Overview -->
+            <div class="portfolio-project-box">
+                <h2>Project Overview</h2>
+                <p>
+                    F.R.O.G is a top-down maze exploration game developed in C++
+                    using SDL and FMOD. The player must navigate through dangerous
+                    environments, manage stamina, avoid enemies, and collect items.<br><br>
+                    The game will follow generic survival game logic, meaning if the player suffers too much damage the game will
+                    finish and prompt the player that they have failed to complete the objective.
+                    The main goal of the game is to locate the exit tile of each level to progress further into the game, after a certain
+                    number of levels (e.g. level 20) the final exit tile will spawn allowing the player to complete the game.
+                    Player and enemy will be given opportunities to attack one another but have limitations depending on the entity
+                    type. 
+                </p>
+            </div>
+
+            <!-- Main Screenshot -->
+            <div class="portfolio-project-box">
+                <h2>Gameplay Screenshot</h2>
+                <img src="frog_game_screenshot.png" class="portfolio-project-image" style="width: 500px;height: 400px;">
+            </div>
+
+            <!-- Technical Features -->
+            <div class="portfolio-project-box">
+                <h2>Technical Features</h2>
+
+                <ul>
+                    <li>Tile-based map rendering</li>
+                    <li>Tile collision detection</li>
+                    <li>Player movement system</li>
+                    <li>Ammo and health management</li>
+                    <li>Enemy AI behaviours using BFS algorithm</li>
+                    <li>FMOD audio integration</li>
+                    <li>Animation system</li>
+                    <li>Scene integration</li>
+                </ul>
+            </div>
+
+            <!-- Challenges -->
+            <div class="portfolio-project-box">
+                <h2>Challenges & Solutions</h2>
+
+                <h3 style="color:#ffffff;">Animation Issues</h3>
+                <p>
+                    Animation sprites played all frames in the given spritesheet.<br> 
+                    Solution was to modify the engine framework and develop a method to select specific frames from within the spritesheet.  
+                </p>
+
+                <h3 style="color:#ffffff;">Memory & Cache</h3>
+                <p>
+                    In early versions, initalising sprites cause graphical sprite errors due to the program not handling sprite generation beforehand.<br>
+                    Solution was to develop a function to preload shaders, sprites and audio to avoid these errors. Ensuring the program correctly saves memory addresses.
+                </p>
+            </div>
+
+            <!-- Reflection -->
+            <div class="portfolio-project-box">
+                <h2>Reflection</h2>
+
+                <p>
+                    This project improved my understanding of game loops,
+                    state management, collision systems, and audio integration.
+                </p>
+
+                <p>
+                    Future improvements would include better pathfinding and additional enemy
+                    behaviours.
+                </p>
+            </div>
+
+            <!-- Downloads -->
+            <div class="portfolio-project-box">
+                <h2>Downloads & Links</h2>
+
+                <a href="#">GitHub Repository</a><br><br>
+
+                <a href="#">Technical Documentation</a>
+            </div>
+
+        </div>
+
+    </div>
+    <br>
+    <div class="portfolio-project-page">
+
+        <h1 class="portfolio-project-title">Phantom Raiders</h1>
+
+        <div class="portfolio-project-grid">
+
+            <!-- Overview -->
+            <div class="portfolio-project-box">
+                <h2 style="border-bottom: 2px solid #cf5858;">Project Overview</h2>
+                <p>
+                    Phantom Raiders is a horror experience for the player using factors such as: lack of visibility and overwhelming mechanics (sanity, limited flashlight charge, stamina).<br><br>
+                    You play as the Employee and is contracted to work a graveyard shift with clear requirements of extracting items back to
+                    the company using the extraction points. The employee must complete areas of item extractions
+                    behind the night ends. The employee must be wary of what lurks in the dark as otherworldly beings
+                    inhabit the facility. The company equips the employee with a flashlight to help navigate the facility and
+                    find items.
+                </p>
+            </div>
+
+            <!-- Main Screenshot -->
+            <div class="portfolio-project-box">
+                <h2 style="border-bottom: 2px solid #cf5858;">Gameplay Screenshot</h2>
+                <img src="phantom_raiders_screenshot.png" class="project-image" style="width: 650px;height: 400px;">
+            </div>
+
+            <!-- Technical Features -->
+            <div class="portfolio-project-box">
+                <h2 style="border-bottom: 2px solid #cf5858;">Technical Features</h2>
+
+                <ul>
+                    <li>Free roam movement system</li>
+                    <li>Collision detection system</li>
+                    <li>Various UI elements</li>
+                    <li>Sanity, Flashlight, Stamina, Inventory and Health management</li>
+                    <li>Complex Enemy AI algorithms</li>
+                    <li>    > BFS path finding using Nodes</li>
+                    <li>FMOD audio integration</li>
+                    <li>Scene integration</li>
+                </ul>
+            </div>
+
+            <!-- Challenges -->
+            <div class="portfolio-project-box">
+                <h2 style="border-bottom: 2px solid #cf5858;">Challenges & Solutions</h2>
+
+                <h3 style="color:#ffffff;">Cross-compatiblity Issues</h3>
+                <p>
+                    Working with group members using different operating systems that presented compatiblity complications.<br>
+                    Developed extensive debugging and bug detecting skills to resolve complications   
+                </p>
+
+                <h3 style="color:#ffffff;">Map Generation</h3>
+                <p>
+                    Creating unique map layouts.<br>
+                    Developed a complex algorithm to generate matrices to format map data.
+                </p>
+            </div>
+
+            <!-- Reflection -->
+            <div class="portfolio-project-box">
+                <h2 style="border-bottom: 2px solid #cf5858;">Reflection</h2>
+
+                <p>
+                    This project developed skills in teamwork based projects to better understand team dynamics and culture.
+                </p>
+
+                <p>
+                    Future improvements would to improve on the current build to incorporate features that did not make the Gold Milestone.
+                </p>
+            </div>
+
+            <!-- Downloads -->
+            <div class="portfolio-project-box">
+                <h2 style="border-bottom: 2px solid #cf5858;">Downloads & Links</h2>
+
+                <a href="#">GitHub Repository</a><br><br>
+
+                <a href="#">Technical Documentation</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

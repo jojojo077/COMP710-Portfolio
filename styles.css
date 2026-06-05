@@ -1,0 +1,350 @@
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 180px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #242a44; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  font-weight: bold;
+  text-align: right;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #818181;
+  display: block;
+
+}
+.sidenav b {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #dfdfdf;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #ffffff;
+}
+
+/* Style page content */
+.main {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.welcome {
+  
+  padding: 30px;
+  height: 250px;
+  width: 550px;
+  background-color: rgba(0, 0, 0, 0.65); 
+  border-radius: 10%;
+}
+.welcome a{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  color:rgb(236, 236, 236);
+  font-weight: bolder;
+}
+.welcome b {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  color: rgb(236, 236, 236);
+  font-weight: normal;
+}
+
+.welcome c {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 60px;
+  color: rgb(78, 224, 102);
+  font-weight: bolder;
+}
+ /* The container sets the boundaries for absolute positioning */
+.image-container {
+  position: relative;
+  display: inline-block; /* Keeps container tightly fitted to the image size */
+  border-radius: 12px;       /* Match the rounding amount */
+  overflow: hidden;
+}
+
+/* Make sure the image behaves responsively */
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 20px solid #dfeeff; /* Blue border example */
+  border-radius: 12px;       /* Match the container rounding */
+  box-sizing: border-box;
+}
+
+/* The overlay text is placed directly over the image container */
+.overlay-text {
+  position: absolute;
+  top: 35%;          /* Moves down to the vertical middle */
+  left: 30%;         /* Moves right to the horizontal middle */
+  transform: translate(-50%, -50%); /* Perfectly centers the text element */
+  
+  /* Styling to make the text readable */
+  color: white;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds contrast against busy images */
+  text-align: left;
+  white-space: nowrap;
+}
+
+.about-card {
+  display: flex;             /* Activates side-by-side layout */
+  align-items: center;       /* Centers layout vertically */
+  gap: 30px;                 /* Spacing between image and text */
+  background-color: #0f83bd; /* Dark background matching the image */
+  padding: 40px;
+  border-radius: 12px;
+  font-family: system-ui, sans-serif;
+  max-width: 800px;
+}
+
+/* Circular Profile Image */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;        /* Makes it a perfect circle */
+  object-fit: cover;         /* Prevents image stretching */
+  flex-shrink: 0;            /* Prevents image from squishing */
+}
+
+/* Text Wrapper */
+.profile-content {
+  display: flex;
+  flex-direction: column;    /* Stacks text items vertically */
+  gap: 12px;                 /* Spacing between title, paragraph, and link */
+}
+
+/* Heading */
+.profile-content h2 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Paragraph Body */
+.profile-content p {
+  color: #ddeaff;            /* Clean gray color for readability */
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.featured-projects
+{
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.featured-projects h2
+{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.project-grid
+{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.project-card
+{
+    width: 320px;
+    background-color: #1e2936;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.project-card:hover
+{
+    transform: translateY(-5px);
+}
+
+.project-card img
+{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-card h3
+{
+    color: white;
+    margin: 15px;
+}
+
+.project-card p
+{
+    color: #d0d0d0;
+    margin: 15px;
+    min-height: 70px;
+}
+
+.project-btn
+{
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 18px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.project-btn:hover
+{
+  font-weight: bold;
+    background-color: #20a327;
+}
+
+.portfolio-project-container
+{
+    background-color: #233649;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.portfolio-project-title
+{
+    color: white;
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.portfolio-project-header
+{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.portfolio-project-image
+{
+    width: 500px;
+    border-radius: 10px;
+}
+
+.portfolio-project-summary
+{
+    flex: 1;
+}
+
+.portfolio-project-summary h2,
+.portfolio-project-section h2
+{
+    color: white;
+}
+
+.portfolio-project-summary p,
+.portfolio-project-section p,
+.portfolio-project-section li
+{
+    color: #e0e0e0;
+    line-height: 1.7;
+}
+
+.portfolio-project-section
+{
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.portfolio-project-section h3
+{
+    color: white;
+}
+
+.portfolio-tech-tags
+{
+    margin-top: 20px;
+}
+
+.portfolio-tech-tags span
+{
+    display: inline-block;
+    background-color: #182633;
+    color: #4CAF50;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.portfolio-project-page {
+    background-color: #233649;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.portfolio-project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.portfolio-project-box {
+    background-color: #1a2a3a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.portfolio-project-box h2 {
+    color: white;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.portfolio-project-box h3 {
+    color: white;
+}
+
+.portfolio-project-box p,
+.portfolio-project-box li {
+    color: #e0e0e0;
+    line-height: 1.7;
+}
+
+.portfolio-project-box a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.portfolio-project-box a:hover {
+    text-decoration: underline;
+}
