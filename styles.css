@@ -35,7 +35,7 @@
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #ffffff;
+  color: #e2e2e2;
 }
 
 /* Style page content */
@@ -464,4 +464,70 @@
     .highlights-section {
         grid-template-columns: 1fr;
     }
+}
+
+.contacts-section
+{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.contacts-card
+{
+    width: 710px;
+    height: 250px;
+
+    background-color: #102233;
+
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: left;
+    padding-left: 30px;
+
+    text-align: left;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+    transition: 0.3s;
+}
+
+.contacts-card:hover
+{
+    transform: translateY(-5px);
+}
+
+.contacts-link
+{
+    text-decoration: none;
+    color: white;
+}
+
+.contact-link:hover
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contacts-card i
+{
+    font-size: 80px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.contacts-card h2
+{
+    color: white;
+    margin: 10px 0;
+}
+
+.contacts-card p
+{
+    color: #dcdcdc;
 }

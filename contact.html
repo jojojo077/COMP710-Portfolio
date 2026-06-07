@@ -1,0 +1,97 @@
+<!-- Side navigation -->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio Homepage</title>
+</head>
+<body style="background-color: rgb(58, 94, 126);">
+  
+    <div class="sidenav">
+      <b>Dante Leyting</b>
+      <b>COMP710 Game Programming Student</b><br>
+  <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="about_me.html"><i class="fa fa-user-circle"></i> About Me</a>
+  <a href="#"><i class="fa fa-window-maximize"></i> Tech Demos</a>
+  <a href="projects.html"><i class="fa fa-laptop"></i> Projects</a>
+  <a href="resume.html"><i class="fa fa-book"></i> Resume</a>
+  <a href="skills.html"><i class="fa fa-pie-chart"></i> Skills</a>
+  <a href="contact.html"style="color: #ffffff;"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+</div>
+<div class="main">
+
+    <div class="portfolio-project-page">
+
+        <h1 class="portfolio-project-title">Contact Me</h1>
+
+        <div class="contacts-section">
+
+            <!-- LinkedIn -->
+            <div class="contacts-card">
+                <a href="https://www.linkedin.com/in/dante-leyting-541b46373/" target="_blank" rel="noopener noreferrer"
+                   class="contacts-link">
+                    <i class="fa fa-linkedin-square"></i>
+
+                    <div class="contact-content">
+                        <h2>LinkedIn</h2>
+                        <p>Connect with me professionally.</p>
+                    </div>
+                </a>
+            </div>
+            <br>
+            <!-- Email -->
+            <div class="contacts-card">
+                <a href="mailto:danteleyting@gmail.com" target="_blank" rel="noopener noreferrer"
+                   class="contacts-link">
+
+                <i class="fa fa-envelope-square"></i>
+
+                <div class="contact-content">
+                    <h2>Email</h2>
+
+                    <p>danteleyting@gmail.com</p>
+                </div>
+                </a>
+            </div>
+
+            <!-- CV -->
+            <div class="contacts-card" onclick="changeText()">
+
+                <i class="fa fa-address-card"></i>
+
+                <div class="contact-content">
+                    <h2>Curriculum Vitae (CV)</h2>
+                    <p id="cvText"><u>Download</u></p>
+                </div>
+
+            </div>
+            <br>
+            <!-- Location -->
+            <div class="contacts-card">
+
+                <i class="fa fa-map-marker"></i>
+
+                <div class="contact-content">
+                    <h2>Location</h2>
+                    <p>Auckland, New Zealand</p>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+</div>
+</body>
+<script>
+    function changeText() {
+        document.getElementById("cvText").textContent = "This is a placeholder for now...";
+        setTimeout(returnText, 4000);
+    }
+    function returnText() {
+        document.getElementById("cvText").textContent = "Download";
+    }
+</script>
+</html>
