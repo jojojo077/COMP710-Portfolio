@@ -132,13 +132,12 @@
   font-family: system-ui, sans-serif;
   max-width: 800px;
 
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.8s ease-in-out; 
 }
 .about-card:hover {
   background-color: #055d8a;
-  transform: scale(1.03); 
+  transform: scale(0.8); 
     
-    /* Optional: Makes the shadow deeper to look like it is lifting up */
     box-shadow: 0 8px 16px rgba(0,0,0,0.3); 
 }
 
@@ -237,6 +236,7 @@
     color: rgb(255, 255, 255);
     text-decoration: none;
     border-radius: 6px;
+    transition: background-color 0.2s ease;
 }
 
 .project-btn:hover
@@ -336,7 +336,7 @@
 }
 
 .portfolio-project-box {
-    background-color: #1a2a3a;
+    background-color: #0d1b2a;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
@@ -530,4 +530,106 @@
 .contacts-card p
 {
     color: #dcdcdc;
+}
+
+.demo-title
+{
+    color: white;
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+.demo-summary {
+    color: white;
+    border-bottom: white;
+}
+.demo-subtitle{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+
+/* ===== TECH DEMOS PAGE ===== */
+
+.demos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.demo-card {
+    background-color: #0d1b2a;
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 3px solid #3498db;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-top-color 0.2s ease;
+}
+
+.demo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border-top-color: #4CAF50;
+}
+
+.demo-card-label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.demo-card h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
+
+.demo-card p {
+    color: #a0b4c8;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 15px 0;
+}
+
+.demo-card-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.demo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.demo-link-github {
+    background-color: #1a2a3a;
+    color: #c0d0e0;
+}
+
+.demo-link-github:hover {
+    background-color: rgb(75, 115, 158);
+    color: #ffffff;
+}
+
+.demo-subcard {
+    background-color: #0d1b2a;
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
